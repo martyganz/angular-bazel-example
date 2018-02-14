@@ -1,16 +1,16 @@
 
 import {NgModule, Component} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-import { HelloWorldModule } from './hello-world/hello-world.module';
+import { ReproModule } from './repro';
 
 @Component({
   selector: 'app-component',
-  template: '<hello-world-app></hello-world-app>'
+  template: ''
 })
 export class BootstrapComponent {}
 
 @NgModule({
-  imports: [BrowserModule, HelloWorldModule],
+  imports: [BrowserModule, ReproModule],
   declarations: [BootstrapComponent],
   bootstrap: [BootstrapComponent],
 })
